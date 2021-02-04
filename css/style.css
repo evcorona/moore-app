@@ -1,36 +1,63 @@
-.login-col {
-  height: 100vh;
-}
-
-body {
+.login-bg {
   background-image: url("/images/bg-3.jpg");
   background-size: cover;
 }
 
-.login {
+.login-bg .login-col {
+  height: 100vh;
+}
+
+.login-bg .login {
   background-color: #1c688844;
 }
 
-.login img {
+.login-bg .login img {
   width: 318px;
   height: 120px;
   -o-object-fit: none;
      object-fit: none;
 }
 
-.login a:hover {
+.login-bg .login a:hover {
   color: #29AAE1;
 }
 
-.text-moore {
+.login-bg .text-moore {
   color: white;
 }
 
-.btn {
+.login-bg .btn {
   background-color: #29AAE1;
+  color: white;
+  border: none;
 }
 
-.btn:hover {
+.login-bg .btn:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#29AAE1), to(#00ccff));
+  background-image: linear-gradient(to right, #29AAE1, #00ccff);
+}
+
+.colaborator-bg {
+  background-image: url("/images/bg-3.jpg");
+  background-size: cover;
+}
+
+.colaborator-bg nav {
+  background-color: #1c688844;
+}
+
+.colaborator-bg nav img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.colaborator-bg .btn {
+  background-color: #29AAE1;
+  color: white;
+  border: none;
+}
+
+.colaborator-bg .btn:hover {
   background-image: -webkit-gradient(linear, left top, right top, from(#29AAE1), to(#00ccff));
   background-image: linear-gradient(to right, #29AAE1, #00ccff);
 }

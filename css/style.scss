@@ -1,36 +1,62 @@
-.login-col {
-  height: 100vh;
-}
-
-body {
+//Login Style
+.login-bg {
   background-image: url("/images/bg-3.jpg");
   background-size: cover;
 
-}
-
-.login {
-  background-color: #1c688844;
-
-  img {
-    width: 318px;
-    height: 120px;
-    object-fit: none;
+  .login-col {
+    height: 100vh;
   }
 
-  a {
+  .login {
+    background-color: #1c688844;
+
+    img {
+      width: 318px;
+      height: 120px;
+      object-fit: none;
+    }
+
+    a {
+      &:hover {
+        color: #29AAE1;
+      }
+    }
+  }
+
+  .text-moore {
+    color: white;
+  }
+
+  .btn {
+    background-color: #29AAE1;
+    color: white;
+    border: none;
+
     &:hover {
-      color: #29AAE1;
+      background-image: linear-gradient(to right, #29AAE1, #00ccff);
     }
   }
 }
 
-.text-moore {
-  color: white;
-}
+//Colaborator Style
+.colaborator-bg {
+  background-image: url("/images/bg-3.jpg");
+  background-size: cover;
 
-.btn {
-  background-color:  #29AAE1;
-    &:hover{
-    background-image: linear-gradient(to right,#29AAE1 , #00ccff);
+  nav {
+    background-color: #1c688844;
+    img{
+      filter: invert(1);
     }
+  }
+
+  .btn {
+    background-color: #29AAE1;
+    color: white;
+    border: none;
+
+    &:hover {
+      background-image: linear-gradient(to right, #29AAE1, #00ccff);
+    }
+  }
 }
