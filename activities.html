@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
   <link rel="icon" type="image/png" sizes="32x32" href="/images/logo3.jpeg" />
   <link rel="stylesheet" href="/css/style.css">
   <title>Moore App</title>
@@ -14,23 +16,23 @@
 <body class="colaborator-bg">
 
   <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
   <div class="container">
@@ -43,63 +45,158 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse d-flex flex-row justify-content-between align-items-center"
+        <div class="collapse navbar-collapse d-flex flex-row justify-content-end align-items-center"
           id="navbarSupportedContent">
-          <h3 class="p-3 text-light">Usuario X</h3>
-          <div class="d-flex flex-row justify-content-end align-items-center">
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-            </form>
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Agregar actividad
+          <div class="dropdown">
+            <p class="fas fa-user-circle fs-1 text-light border-0 bg-transparent rounded-circle" d="dropdownMenuButton"
+              data-bs-toggle="dropdown" aria-expanded="false"></p>
             </button>
-            
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Usuario</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </nav>
+  </div>
+  </nav>
   </div>
   <!--INICIO-->
   <div class="container mt-3">
     <div class="row">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <table class="table table-hover table-sm table-responsive w-50 table-light">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td colspan="2">Larry the Bird</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
-            </table>
+        <div class="row bg-light px-5">
+
+          <div class="col-3 d-flex flex-column justify-content-center">
+            <div class="d-flex flex-row justify-content-center my-4">
+              <div class="card mx-2 w-100 text-danger text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Pendientes</h5>
+                  <p class="card-text">#####</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 d-flex flex-column justify-content-center">
+            <div class="card mx-2 w-100 text-success text-center">
+              <div class="card-body">
+                <h5 class="card-title">Total</h5>
+                <p class="card-text">#####</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+            <div class="card my-2 w-100 text-center">
+              <div class="card-body">
+                <h5 class="card-title">Día de hoy</h5>
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Agregar actividades
+                </button>
+                <span class="card-text text-success fas fa-check-circle fs-3"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 d-flex flex-column justify-content-center">
+            <div class="d-flex flex-column justify-content-center align-items-center my-2">
+              <h1 class="mb-4 text-center">Actividades</h1>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary px-5">Todo</button>
+                <button type="button" class="btn btn-primary px-5">Semana</button>
+                <button type="button" class="btn btn-primary px-5">Mes</button>
+                <button type="button" class="btn btn-primary px-5">Año</button>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column justify-content-center align-items-center my-2">
+              <table class="table table-hover table-dark text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Status</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>
+                      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar actividades
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>
+                      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar actividades
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Jacob</td>
+                    <td>
+                      <span class="text-success fas fa-check-circle fs-3"></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card my-2 w-100">
+              <div class="card-body">
+                <h5 class="card-title text-center">Día ###</h5>
+                <p class="card-text">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Clave</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Actividad</th>
+                        <th scope="col">Tiempo</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </p>
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="btn rounded-circle" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card my-2 w-100 text-center alert alert-danger">
+              <div class="card-body">
+                <h5 class="card-title">Día ###</h5>
+                <p class="card-text">No hay actividades registradas.
+                </p>
+              </div>
+            </div>
 
           </div>
         </div>
       </div>
     </div>
-  </div>
   </div>
 
 
