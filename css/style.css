@@ -1,0 +1,37 @@
+.login-col {
+  height: 100vh;
+}
+
+body {
+  background-image: url("/images/bg-3.jpg");
+  background-size: cover;
+}
+
+.login {
+  background-color: #1c688844;
+}
+
+.login img {
+  width: 318px;
+  height: 120px;
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+.login a:hover {
+  color: #29AAE1;
+}
+
+.text-moore {
+  color: white;
+}
+
+.btn {
+  background-color: #29AAE1;
+}
+
+.btn:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#29AAE1), to(#00ccff));
+  background-image: linear-gradient(to right, #29AAE1, #00ccff);
+}
+/*# sourceMappingURL=style.css.map */

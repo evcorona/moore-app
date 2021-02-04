@@ -1,0 +1,36 @@
+.login-col {
+  height: 100vh;
+}
+
+body {
+  background-image: url("/images/bg-3.jpg");
+  background-size: cover;
+
+}
+
+.login {
+  background-color: #1c688844;
+
+  img {
+    width: 318px;
+    height: 120px;
+    object-fit: none;
+  }
+
+  a {
+    &:hover {
+      color: #29AAE1;
+    }
+  }
+}
+
+.text-moore {
+  color: white;
+}
+
+.btn {
+  background-color:  #29AAE1;
+    &:hover{
+    background-image: linear-gradient(to right,#29AAE1 , #00ccff);
+    }
+}
