@@ -76,7 +76,62 @@
 .colaborator-bg .btn-outline-info:focus {
   background-color: #29AAE1;
   color: white;
-  -webkit-box-shadow: 0px;
-          box-shadow: 0px;
+}
+
+.admin-bg {
+  background-image: url("/images/bg-3.jpg");
+  background-size: cover;
+  /*   .cherry {
+    background-image: url("/images/bg-3.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: fixed;
+    z-index: -1;
+  } */
+}
+
+.admin-bg nav {
+  background-color: #1c688844;
+}
+
+.admin-bg nav img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.admin-bg .btn-primary {
+  background-color: #29AAE1;
+  color: white;
+  border: none;
+}
+
+.admin-bg .btn-primary:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#29AAE1), to(#00ccff));
+  background-image: linear-gradient(to right, #29AAE1, #00ccff);
+}
+
+.admin-bg .btn-outline-info {
+  border: 1px solid #29AAE1;
+  color: #29AAE1;
+}
+
+.admin-bg .btn-outline-info:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#29AAE1), to(#00ccff));
+  background-image: linear-gradient(to right, #29AAE1, #00ccff);
+  color: white;
+}
+
+.admin-bg .btn-outline-info:focus {
+  background-color: #29AAE1;
+  color: white;
+}
+
+.admin-bg .btn-check:active + .btn-outline-info,
+.admin-bg .btn-check:checked + .btn-outline-info,
+.admin-bg .btn-outline-info.active,
+.admin-bg .btn-outline-info:active {
+  color: white;
+  background-color: #29AAE1;
 }
 /*# sourceMappingURL=style.css.map */

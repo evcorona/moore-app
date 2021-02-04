@@ -76,3 +76,59 @@
     }
 
   }
+}
+
+//Admin Style
+.admin-bg {
+  background-image: url("/images/bg-3.jpg");
+  background-size: cover;
+/*   .cherry {
+    background-image: url("/images/bg-3.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: fixed;
+    z-index: -1;
+  } */
+
+  nav {
+    background-color: #1c688844;
+
+    img {
+      filter: invert(1);
+    }
+  }
+
+  .btn-primary {
+    background-color: #29AAE1;
+    color: white;
+    border: none;
+
+    &:hover {
+      background-image: linear-gradient(to right, #29AAE1, #00ccff);
+    }
+  }
+
+  .btn-outline-info {
+    border: 1px solid #29AAE1;
+    color: #29AAE1;
+
+    &:hover {
+      background-image: linear-gradient(to right, #29AAE1, #00ccff);
+      color: white;
+    }
+
+    &:focus {
+      background-color: #29AAE1;
+      color: white;
+    }
+  }
+
+  .btn-check:active+.btn-outline-info,
+  .btn-check:checked+.btn-outline-info,
+  .btn-outline-info.active,
+  .btn-outline-info:active {
+    color: white;
+    background-color: #29AAE1;
+  }
+}
