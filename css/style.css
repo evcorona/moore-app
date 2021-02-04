@@ -51,18 +51,32 @@
           filter: invert(1);
 }
 
-.colaborator-bg .text-moore {
-  color: #29AAE1;
-}
-
-.colaborator-bg .btn {
+.colaborator-bg .btn-primary {
   background-color: #29AAE1;
   color: white;
   border: none;
 }
 
-.colaborator-bg .btn:hover {
+.colaborator-bg .btn-primary:hover {
   background-image: -webkit-gradient(linear, left top, right top, from(#29AAE1), to(#00ccff));
   background-image: linear-gradient(to right, #29AAE1, #00ccff);
+}
+
+.colaborator-bg .btn-outline-info {
+  border: 1px solid #29AAE1;
+  color: #29AAE1;
+}
+
+.colaborator-bg .btn-outline-info:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#29AAE1), to(#00ccff));
+  background-image: linear-gradient(to right, #29AAE1, #00ccff);
+  color: white;
+}
+
+.colaborator-bg .btn-outline-info:focus {
+  background-color: #29AAE1;
+  color: white;
+  -webkit-box-shadow: 0px;
+          box-shadow: 0px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -20,15 +20,15 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Agregar actividades</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           ...
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
         </div>
       </div>
     </div>
@@ -67,12 +67,12 @@
   <!--INICIO-->
   <div class="container mt-3">
     <div class="row">
-      <div class="container-fluid">
-        <div class="row bg-light px-5">
+      <div class="container-fluid bg-light">
+        <div class="row mt-3 mx-4 border">
 
-          <div class="col-3 d-flex flex-column justify-content-center">
+          <div class="col-3 d-flex flex-column justify-content-center"">
             <div class="d-flex flex-row justify-content-center my-4">
-              <div class="card mx-2 w-100 text-danger text-center">
+              <div class="card mx-2 w-100 text-danger text-center border-0">
                 <div class="card-body">
                   <h5 class="card-title">Pendientes</h5>
                   <p class="card-text">#####</p>
@@ -81,8 +81,8 @@
             </div>
           </div>
 
-          <div class="col-3 d-flex flex-column justify-content-center">
-            <div class="card mx-2 w-100 text-success text-center">
+          <div class="col-3 d-flex flex-column justify-content-center"">
+            <div class="card mx-2 w-100 text-success text-center border-0">
               <div class="card-body">
                 <h5 class="card-title">Total</h5>
                 <p class="card-text">#####</p>
@@ -91,35 +91,37 @@
           </div>
 
           <div class="col-6 d-flex flex-column justify-content-center align-items-center">
-            <div class="card my-2 w-100 text-center">
+            <div class="card my-2 w-100 text-center border-0">
               <div class="card-body">
                 <h5 class="card-title">Día de hoy</h5>
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   Agregar actividades
                 </button>
                 <span class="card-text text-success fas fa-check-circle fs-3"></span>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-6 d-flex flex-column justify-content-center">
-            <div class="d-flex flex-column justify-content-center align-items-center my-2">
-              <h1 class="mb-4 text-center">Actividades</h1>
+        <div class="row mt-2 mx-4">
+          <div class="col-6 border mr-1">
+            <div class="d-flex flex-column justify-content-center align-items-center my-3">
+              <h1 class="text-center">Actividades</h1>
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-primary px-5">Todo</button>
-                <button type="button" class="btn btn-primary px-5">Semana</button>
-                <button type="button" class="btn btn-primary px-5">Mes</button>
-                <button type="button" class="btn btn-primary px-5">Año</button>
+                <button type="button" class="btn btn-outline-info px-5">Todo</button>
+                <button type="button" class="btn btn-outline-danger  px-5">Pendientes</button>
+                <button type="button" class="btn btn-outline-success px-5">Completadas</button>
               </div>
             </div>
 
-            <div class="d-flex flex-column justify-content-center align-items-center my-2">
-              <table class="table table-hover table-dark text-center">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+              <table class="table table-hover text-center">
                 <thead>
                   <tr>
                     <th scope="col">Fecha</th>
                     <th scope="col">Status</th>
-                    <th scope="col"></th>
+                    <th scope="col">
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -127,18 +129,14 @@
                     <th scope="row">1</th>
                     <td>Mark</td>
                     <td>
-                      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Agregar actividades
-                      </button>
+                      <span class="text-danger fas fa-times-circle fs-3"></span>
                     </td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
                     <td>Jacob</td>
                     <td>
-                      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Agregar actividades
-                      </button>
+                      <span class="text-danger fas fa-times-circle fs-3"></span>
                     </td>
                   </tr>
                   <tr>
@@ -152,8 +150,9 @@
               </table>
             </div>
           </div>
+
           <div class="col-6">
-            <div class="card my-2 w-100">
+            <div class="card w-100">
               <div class="card-body">
                 <h5 class="card-title text-center">Día ###</h5>
                 <p class="card-text">
@@ -177,7 +176,7 @@
                   </table>
                 </p>
                 <div class="d-flex justify-content-end">
-                  <button type="button" class="btn rounded-circle" data-bs-toggle="modal"
+                  <button type="button" class="btn btn-primary rounded-circle" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">
                     +
                   </button>
@@ -185,11 +184,14 @@
               </div>
             </div>
 
-            <div class="card my-2 w-100 text-center alert alert-danger">
+            <div class="card text-center alert alert-danger w-100">
               <div class="card-body">
                 <h5 class="card-title">Día ###</h5>
                 <p class="card-text">No hay actividades registradas.
                 </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Agregar actividades
+                </button>
               </div>
             </div>
 

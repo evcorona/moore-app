@@ -45,15 +45,13 @@
 
   nav {
     background-color: #1c688844;
-    img{
+
+    img {
       filter: invert(1);
     }
   }
-  .text-moore {
-    color:#29AAE1;
-  }
 
-  .btn {
+  .btn-primary {
     background-color: #29AAE1;
     color: white;
     border: none;
@@ -62,4 +60,19 @@
       background-image: linear-gradient(to right, #29AAE1, #00ccff);
     }
   }
-}
+
+  .btn-outline-info {
+    border: 1px solid #29AAE1;
+    color: #29AAE1;
+
+    &:hover {
+      background-image: linear-gradient(to right, #29AAE1, #00ccff);
+      color: white;
+    }
+
+    &:focus {
+      background-color: #29AAE1;
+      color: white;
+    }
+
+  }
